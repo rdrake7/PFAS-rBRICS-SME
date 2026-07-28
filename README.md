@@ -12,7 +12,7 @@ This repository contains:
 
 - **PFAS-specific SMARTS environments and compatibility rules** used to extend the original rBRICS fragmentation strategy.
 - **Hyperparameter search space** used for optimization of the RGCN models.
-- **Representative molecular prediction outputs** for electron affinity (EA), ionization potential (IP), and HOMO–LUMO gap (HL).
+- **Representative molecular prediction outputs** for electron affinity (EA), ionization potential (IP), and HOMO-LUMO gap (HL).
 - **Representative SME fragment attribution examples** illustrating fragment-level explanations generated using PFAS-rBRICS.
 
 ## Acknowledgements
