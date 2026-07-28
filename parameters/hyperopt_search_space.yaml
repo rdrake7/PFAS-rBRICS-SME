@@ -1,0 +1,67 @@
+# Hyperparameter search and training configuration used for the RGCN models
+
+model:
+  architecture: RGCN
+  input_node_features: 40
+  node_data_field: node
+  edge_data_field: edge
+  substructure_mask_field: smask
+  classification: false
+
+optimization:
+  library: Hyperopt
+  algorithm: TPE
+  max_evals_default: 30
+  selection_metric: r2
+  mode: higher
+
+training:
+  max_epochs: 100
+  early_stopping_patience: 10
+  batch_size: 64
+  optimizer: Adam
+  loss_function: MSELoss
+  device: CUDA_if_available_otherwise_CPU
+
+data:
+  split_seed: 2022
+  random_split_shuffling: false
+  training_loader_shuffle: true
+  validation_loader_shuffle: false
+  test_loader_shuffle: false
+
+search_space:
+  rgcn_hidden_feats:
+    - [64, 64]
+    - [128, 128]
+    - [256, 256]
+    - [64, 64, 64]
+    - [128, 128, 128]
+    - [256, 256, 256]
+
+  ffn_hidden_feats:
+    - 64
+    - 128
+    - 256
+
+  ffn_drop_out:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+
+  rgcn_drop_out:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+
+  learning_rate:
+    - 0.003
+    - 0.001
+    - 0.0003
+    - 0.0001
