@@ -68,7 +68,7 @@ PFAS_COMPATS = (
 
     (("27", "28O", "-"),
      ("27", "28N", "-")),
-s
+
     #Sulfur-imide/sulfoxide support
     (("26", "12x", "-"),),
 
