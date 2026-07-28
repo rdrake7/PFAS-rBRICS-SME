@@ -29,4 +29,4 @@ https://www.nature.com/articles/s41467-023-38192-3
 
 Wu, Z., et al. *Substructure-Mask-Explanation (SME).* Zenodo.
 
-https://doi.org/10.5281/zenodo.7707093
+https://zenodo.org/records/11078617
