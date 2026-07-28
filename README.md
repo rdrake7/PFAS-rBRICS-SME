@@ -17,13 +17,7 @@ This repository contains:
 
 ## Acknowledgements
 
-PFAS-rBRICS extends the Substructure Mask Explanation (SME) framework by introducing PFAS-specific SMARTS environments and compatibility rules for molecular fragmentation. The underlying SME methodology and original implementation were developed by Wu et al.
-
-**Original SME publication**
-
-Wu, Z., et al. *Chemistry-intuitive explanation of graph neural networks for molecular property prediction with substructure masking.* Nature Communications, **14**, 2555 (2023).
-
-https://www.nature.com/articles/s41467-023-38192-3
+PFAS-rBRICS extends the Substructure Mask Explanation (SME) framework by introducing PFAS-specific SMARTS environments and compatibility rules for molecular fragmentation. The underlying SME methodology and original implementation were developed by Wu et al., based on the following reference: Wu, Z., et al. Chemistry-intuitive explanation of graph neural networks for molecular property prediction with substructure masking. Nature Communications, 14, 2555 (2023).
 
 **Original SME software**
 
